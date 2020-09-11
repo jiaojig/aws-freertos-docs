@@ -11,7 +11,7 @@ The FreeRTOS Wi\-Fi library requires the [FreeRTOS\+TCP](https://freertos.org/Fr
 ## Features<a name="freertos-wifi-features"></a>
 
 The Wi\-Fi library includes the following features:
-+ Support for WEP, WPA, and WPA2 authentication
++ Support for WEP, WPA, WPA2 and WPA3 authentication
 + Access Point Scanning
 + Power management
 + Network profiling
@@ -34,11 +34,12 @@ Set your device to P2P mode to allow multiple devices to connect to each other d
 
 ### Security<a name="freertos-wifi-security"></a>
 
-The Wi\-Fi API supports WEP, WPA, and WPA2 security types\. When a device is in Station mode, you must specify the network security type when calling the `WIFI_ConnectAP` function\. When a device is in AP mode, the device can be configured to use any of the supported security types:
+The Wi\-Fi API supports WEP, WPA, WPA2 and WPA3 security types\. When a device is in Station mode, you must specify the network security type when calling the `WIFI_ConnectAP` function\. When a device is in AP mode, the device can be configured to use any of the supported security types:
 + `eWiFiSecurityOpen`
 + `eWiFiSecurityWEP`
 + `eWiFiSecurityWPA`
 + `eWiFiSecurityWPA2`
++ `eWiFiSecurityWPA3`
 
 ### Scanning and connecting<a name="freertos-wifi-connection"></a>
 
